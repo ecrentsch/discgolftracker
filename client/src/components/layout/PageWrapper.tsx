@@ -9,7 +9,7 @@ interface PageWrapperProps {
 
 export function PageWrapper({ children, title, action, className = '' }: PageWrapperProps) {
   return (
-    <main className={`max-w-4xl mx-auto px-4 pt-20 pb-24 md:pb-8 ${className}`}>
+    <main className={`max-w-4xl mx-auto px-4 pt-16 md:pt-20 pb-24 md:pb-8 ${className}`}>
       {(title || action) && (
         <div className="flex items-center justify-between mb-6">
           {title && <h1 className="text-2xl font-bold text-stone-900">{title}</h1>}

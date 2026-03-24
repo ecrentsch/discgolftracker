@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AuthProvider, useAuth } from './context/AuthContext';
 import { Navbar } from './components/layout/Navbar';
 import { MobileNav } from './components/layout/MobileNav';
+import { MobileHeader } from './components/layout/MobileHeader';
 import { LoginPage } from './pages/auth/LoginPage';
 import { SignupPage } from './pages/auth/SignupPage';
 import { DashboardPage } from './pages/DashboardPage';
@@ -43,6 +44,7 @@ function AppRoutes() {
   return (
     <div className="min-h-screen bg-stone-50">
       <Navbar />
+      <MobileHeader />
       <MobileNav />
       <Routes>
         <Route path="/" element={<Navigate to={isAuthenticated ? '/dashboard' : '/login'} replace />} />
