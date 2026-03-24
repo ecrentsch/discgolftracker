@@ -3,7 +3,10 @@
     "allow": [
       "Read(//usr/local/**)",
       "Read(//usr/**)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(npx tsc:*)",
+      "Bash(export PATH=\"$PATH:/c/Program Files/nodejs\")",
+      "Bash(npx vite:*)"
     ]
   }
 }
