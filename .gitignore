@@ -12,7 +12,6 @@ client/dist/
 server/dist/
 
 # Prisma
-server/prisma/migrations/
 
 # OS
 .DS_Store
