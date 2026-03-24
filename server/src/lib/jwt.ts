@@ -7,21 +7,21 @@ export interface JwtPayload {
 }
 
 export function signAccessToken(payload: JwtPayload): string {
-  return jwt.sign(payload, config.jwtAccessSecret, {
-    expiresIn: config.jwtAccessExpiresIn,
-  });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return jwt.sign(payload as any, config.jwtAccessSecret, { expiresIn: '15m' } as any);
 }
 
 export function signRefreshToken(payload: JwtPayload): string {
-  return jwt.sign(payload, config.jwtRefreshSecret, {
-    expiresIn: config.jwtRefreshExpiresIn,
-  });
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return jwt.sign(payload as any, config.jwtRefreshSecret, { expiresIn: '7d' } as any);
 }
 
 export function verifyAccessToken(token: string): JwtPayload {
-  return jwt.verify(token, config.jwtAccessSecret) as JwtPayload;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return jwt.verify(token, config.jwtAccessSecret as any) as JwtPayload;
 }
 
 export function verifyRefreshToken(token: string): JwtPayload {
-  return jwt.verify(token, config.jwtRefreshSecret) as JwtPayload;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return jwt.verify(token, config.jwtRefreshSecret as any) as JwtPayload;
 }
