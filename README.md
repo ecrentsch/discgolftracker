@@ -1,4 +1,4 @@
-# 🥏 dihgolf
+# 🥏 RoundTracker
 
 A full-stack disc golf round tracker with social features, a shared course database, bag management, and public profiles.
 

@@ -1,5 +1,5 @@
 {
-  "name": "dihgolf",
+  "name": "roundtracker",
   "private": true,
   "workspaces": ["shared", "server", "client"],
   "scripts": {

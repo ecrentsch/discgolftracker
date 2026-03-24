@@ -1,5 +1,5 @@
 {
-  "name": "@dihgolf/shared",
+  "name": "@roundtracker/shared",
   "version": "1.0.0",
   "main": "src/types.ts",
   "types": "src/types.ts"

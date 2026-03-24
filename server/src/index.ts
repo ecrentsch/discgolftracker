@@ -36,7 +36,7 @@ app.get('/api/health', (_req, res) => res.json({ ok: true }));
 app.use(errorHandler);
 
 app.listen(config.port, () => {
-  console.log(`🏌️  dihgolf server running on http://localhost:${config.port}`);
+  console.log(`🥏  RoundTracker server running on http://localhost:${config.port}`);
 });
 
 export default app;

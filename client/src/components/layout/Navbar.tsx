@@ -46,7 +46,7 @@ export function Navbar() {
         {/* Logo */}
         <Link to={isAuthenticated ? '/dashboard' : '/'} className="flex items-center gap-2 mr-4">
           <span className="text-2xl">🥏</span>
-          <span className="text-xl font-extrabold text-forest-700 tracking-tight">dihgolf</span>
+          <span className="text-xl font-extrabold text-forest-700 tracking-tight">RoundTracker</span>
         </Link>
 
         {isAuthenticated && (
